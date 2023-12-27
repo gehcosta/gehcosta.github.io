@@ -23,6 +23,18 @@ a {
     text-decoration: none;
 }
 
+.titles {
+    font-family: var(--second-font);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.text {
+    font-family: var(--first-font);
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
 /* About Me Section */
 .about_me {
     background-color: var(--third-color);
@@ -157,7 +169,8 @@ a {
 }
 
 .me_photo-left {
-    width: 15%;
+    max-width: 30vw;
+    max-height: 65vh
 }
 
 .know_more {
@@ -168,6 +181,7 @@ a {
     font-size: 1.2rem;
     justify-content: flex-end;
     margin-top: 3rem;
+
 }
 
 /* about me section */
@@ -181,36 +195,32 @@ a {
 }
 
 .me_photo-front {
-    width: 15%;
+    width: 15vw;
+    min-width: 15rem;
+    height: auto;
     background-color: var(--third-color);
 }
 
 .aboutme {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;    
     gap: 2rem;
     background-color: var(--third-color);
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+
 }
 
 .aboutme_title,
 .aboutme_text {
-    color: var(--second-color);
     background-color: inherit;
     padding: 1rem;
 }
 
-.aboutme_title {
-    font-family: var(--second-font);
-    font-size: 3.2rem;
-    font-weight: 700;
-}
+
 
 .aboutme_text {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
 }
 
 .arrow {
@@ -231,18 +241,13 @@ a {
 }
 
 .occupation_title {
-    font-family: var(--second-font);
-    font-size: 3.2rem;
-    font-weight: 700;
     margin-inline: 1rem;
     text-align: center;
 }
 
-.occupation_description,
+.occupation_text,
 .occupation_studies,
 .thrive {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
     text-align: center;
     margin-inline: 2rem;
 
@@ -290,22 +295,17 @@ a {
 
 
 .hobby_title {
-    font-family: var(--second-font);
-    font-size: 3.2rem;
-    font-weight: 700;
+
     margin-left: 2rem;
     margin-bottom: 2rem;
 }
 
 .hobby_text {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
-    font-weight: 300;
     margin-left: 1rem;
 }
 
 .hobby_image {
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     background-color: inherit;
 }
@@ -318,17 +318,11 @@ a {
 }
 
 .future_title {
-    font-family: var(--second-font);
-    font-size: 3.2rem;
-    font-weight: 700;
     padding: 2.5rem;
     margin-top: 13vh;
 }
 
 .future_text {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
-    font-weight: 300;
     margin-inline: 2rem;
 
 }
@@ -369,15 +363,10 @@ a {
 }
 
 .contact_title {
-    font-family: var(--second-font);
-    font-size: 3.2rem;
-    font-weight: 700;
     margin-inline: 1rem;
 }
 
 .contact_text {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
     margin-inline: 2.5rem;
 }
 
@@ -399,14 +388,13 @@ a {
     margin-top: 0.5rem;
 }
 
-.LinkedIn_icon-black {
-    margin-left: 2px;
+.contact_icon:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.contact_detail {
-    font-family: var(--first-font);
-    font-size: 1.2rem;
-    font-weight: 300;
+.LinkedIn_icon-black {
+    margin-left: 2px;
 }
 
 /* footer */
@@ -428,6 +416,10 @@ a {
 
 .mention_list {
     background-color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
 
 .mention_item,
@@ -451,6 +443,61 @@ a {
     background-color: inherit;
     text-align: center;
 }
+
+/* tablet media */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .titles {
+        font-size: 2.5rem;
+    }
+
+    .share_section {
+        align-items: center;
+        gap: 3rem;
+        margin: 2rem 3.5rem;
+    }
+
+    .thank_title {
+        font-size: 3rem;
+    }
+
+    .thank_text {
+        margin-top: 0;
+    }
+
+    .me_photo-left {
+        width: 30%;
+
+    }
+
+    .aboutme {
+        gap: 0;
+    }
+
+    .phrase_text {
+        font-size: 2rem;
+    }
+
+    .mention {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mention_list {
+        gap: 0.2rem;
+        margin-top: 1rem;
+    }
+
+    .mention_item {
+        text-align: center;
+    }
+    
+
+}
+
+/* @media screen (min-width: 413px) and (max-width: 767px) {
+    
+} */
 
 /* cellphone media */
 
