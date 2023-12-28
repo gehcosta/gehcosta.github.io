@@ -36,11 +36,11 @@ a {
 }
 
 /* About Me Section */
-.about_me {
+/* .about_me {
     background-color: var(--third-color);
     display: flex;
     height: 40vh;
-}
+} */
 
 /* Navbar */
 .btn-menu {
@@ -495,13 +495,201 @@ a {
 
 }
 
-/* @media screen (min-width: 413px) and (max-width: 767px) {
+@media screen and (min-width: 431px) and (max-width: 767px) {
     
-} */
+    .titles {
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .header {
+        padding: 2rem 1.5rem;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 7.5rem;
+        left: 0;
+        background: var(--first-color);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(204, 22, 22, 0.16);
+        border-radius: 0;
+    }
+
+    .menu a:hover {
+        background: var(--third-color);
+    }
+
+
+    .nav_logo {
+        width: 80%;
+    }
+
+    .nav_link {
+        font-size: 1.5rem;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding: 1rem 0;
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .hamburger {
+        border-top: 0.3rem solid;
+        width: 3rem; 
+        height: 0.125rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 3rem;
+        height: 0.3rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.6rem;
+    } 
+
+    /* main */
+
+    .share_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .thank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .thank_title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .thank_subtitle,
+    .thank_text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .me_photo-left {
+        max-width: 44vw;
+    }
+
+    /* aboutme section */
+
+    .aboutme {
+        gap: 0;
+    }
+
+    .aboutme_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .aboutme_text {
+        margin-left: 0;
+    }
+
+    /* occupation section */
+
+    .thrive {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .thrive_image {
+        width: 80%;
+    }
+
+    /* hobby section */
+
+    .hobby_section {
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+
+    .hobby {
+        padding: 0;
+    }
+
+    .hobby_text {
+        margin-left: 0;
+        margin-inline: 2rem;
+    }
+
+    .hobby_image {
+        max-width: 75%;
+        max-height: 45vh;
+        margin-right: 1rem;
+    }
+
+    /* future_section */
+
+    .phrase {
+        padding: 1.7rem;
+    }
+
+
 
 /* cellphone media */
 
-@media (max-width: 412px) {
+/*
+@media screen and (max-width: 430px) {
     .menu {
         display: block;
         position: absolute;
@@ -582,5 +770,16 @@ a {
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
         top: -0.4375rem;
-    }
+    } 
+
+    /* main */
+
+    /* .share_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        col
+        margin: 2rem 3.5rem;
+    } */
 }
