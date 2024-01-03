@@ -83,7 +83,6 @@ a {
 }
 
 .nav_logo {
-    cursor: pointer;
     width: 3.5rem;
 }
 
@@ -430,11 +429,11 @@ a {
 
 .mention_link {
     background-color: var(--third-color);
-    text-decoration: underline;
+        text-decoration: underline;
 }
 
 .mention_ghc {
-    width: 3rem;
+    width: 4rem;
     background-color: inherit;
 
 }
@@ -502,7 +501,7 @@ a {
     }   
     
     .text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .header {
@@ -537,7 +536,8 @@ a {
 
 
     .nav_logo {
-        width: 80%;
+        width: 5rem;
+        margin-top: 27px;
     }
 
     .nav_link {
@@ -618,7 +618,7 @@ a {
 
     .thank_subtitle,
     .thank_text {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
         text-align: center;
     }
 
@@ -725,7 +725,7 @@ a {
     }
     
     .text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .header {
@@ -760,7 +760,8 @@ a {
 
 
     .nav_logo {
-        width: 80%;
+        width: 5rem;
+        margin-top: 27px;
     }
 
     .nav_link {
