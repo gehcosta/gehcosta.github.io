@@ -196,7 +196,7 @@ a {
 
 .me_photo-front {
     width: 15vw;
-    min-width: 15rem;
+    min-width: 11rem;
     height: auto;
     background-color: var(--third-color);
 }
@@ -323,7 +323,7 @@ a {
 }
 
 .future_text {
-    margin-inline: 2rem;
+    margin-inline: 3rem;
 
 }
 
@@ -338,7 +338,7 @@ a {
 
 .phrase_text {
     font-family: var(--third-font);
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -475,7 +475,7 @@ a {
     }
 
     .phrase_text {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .mention {
@@ -495,11 +495,11 @@ a {
 
 }
 
-@media screen and (min-width: 431px) and (max-width: 767px) {
+@media screen and (min-width: 386px) and (max-width: 767px) {
     
     .titles {
         font-size: 2.5rem;
-    }
+    }   
     
     .text {
         font-size: 1.2rem;
@@ -682,18 +682,60 @@ a {
 
     .phrase {
         padding: 1.7rem;
+        align-items: center;
     }
 
 
+    .contact_section {
+        padding: 0 3rem;
+    
+    }
+
+    .contact_text, .contact_title {
+        margin-inline: 0;
+    
+    }
+
+    .contact_item {
+        margin-inline: 1rem;
+    }
+
+    /* footer */
+
+    .mention {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mention_list {
+        gap: 0.2rem;
+        margin-top: 1rem;
+    }
+
+    .mention_item {
+        text-align: center;
+    }
+}
 
 /* cellphone media */
 
-/*
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 386px) {
+    .titles {
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .header {
+        padding: 2rem 1.5rem;
+    }
+
     .menu {
         display: block;
         position: absolute;
-        top: 4.6875rem;
+        top: 7.5rem;
         left: 0;
         background: var(--first-color);
         text-align: center;
@@ -718,7 +760,11 @@ a {
 
 
     .nav_logo {
-        width: 2.5rem;
+        width: 80%;
+    }
+
+    .nav_link {
+        font-size: 1.5rem;
     }
 
     .btn-menu {
@@ -736,8 +782,8 @@ a {
     }
 
     .hamburger {
-        border-top: 0.125rem solid;
-        width: 1.25rem;
+        border-top: 0.3rem solid;
+        width: 2.8rem; 
         height: 0.125rem;
     }
 
@@ -745,8 +791,8 @@ a {
     .hamburger::before {
         content: " ";
         display: block;
-        width: 1.25rem;
-        height: 0.125rem;
+        width: 2.8rem;
+        height: 0.3rem;
         background: currentColor;
         margin-top: 0.3125rem;
         position: relative;
@@ -769,17 +815,136 @@ a {
 
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
-        top: -0.4375rem;
+        top: -0.6rem;
     } 
 
     /* main */
 
-    /* .share_section {
+    .share_section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+    }
+
+    .thank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .thank_title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .thank_subtitle,
+    .thank_text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .me_photo-left {
+        max-width: 44vw;
+    }
+
+    /* aboutme section */
+
+    .aboutme {
+        gap: 0;
+    }
+
+    .aboutme_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .aboutme_text {
+        margin-left: 0;
+    }
+
+    /* occupation section */
+
+    .thrive {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .thrive_image {
+        width: 80%;
+    }
+
+    /* hobby section */
+
+    .hobby_section {
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-end;
         gap: 3rem;
-        col
-        margin: 2rem 3.5rem;
-    } */
+    }
+
+    .hobby {
+        padding: 0;
+    }
+
+    .hobby_text {
+        margin-left: 0;
+        margin-inline: 2rem;
+    }
+
+    .hobby_image {
+        max-width: 75%;
+        max-height: 45vh;
+        margin-right: 1rem;
+    }
+
+    /* future_section */
+
+    .phrase {
+        padding: 1.7rem;
+    }
+
+    .phrase_reference {
+        margin-right: 0;
+        margin-top: 1.5rem;
+        align-self: flex-end;
+        font-size: 1rem;
+    }
+
+    .contact_section {
+        padding: 0 3rem;
+    
+    }
+
+    .contact_text, .contact_title {
+        margin-inline: 0;
+    
+    }
+
+    .contact_item {
+        margin-inline: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* footer */
+
+    .mention {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mention_list {
+        gap: 0.2rem;
+        margin-top: 1rem;
+    }
+
+    .mention_item {
+        text-align: center;
+
+    }
+    
 }
