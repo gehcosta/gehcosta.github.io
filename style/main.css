@@ -35,14 +35,10 @@ a {
     font-weight: 300;
 }
 
-/* About Me Section */
-/* .about_me {
-    background-color: var(--third-color);
-    display: flex;
-    height: 40vh;
-} */
+/* Desktop Media */
 
 /* Navbar */
+
 .btn-menu {
     display: none;
 }
@@ -83,13 +79,14 @@ a {
 }
 
 .nav_logo {
-    width: 3.5rem;
+    width: 4rem;
+    margin-top: 15px;
 }
 
-.nav_logo:hover {
+/* .nav_logo:hover {
     transform: rotate(360deg) scale(1.1);
     transition: 1s;
-}
+} */
 
 /* Main */
 .share_section {
@@ -180,7 +177,6 @@ a {
     font-size: 1.2rem;
     justify-content: flex-end;
     margin-top: 3rem;
-
 }
 
 /* about me section */
@@ -195,7 +191,7 @@ a {
 
 .me_photo-front {
     width: 15vw;
-    min-width: 11rem;
+    min-width: 13rem;
     height: auto;
     background-color: var(--third-color);
 }
@@ -203,11 +199,10 @@ a {
 .aboutme {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;    
+    justify-content: flex-start;
     gap: 2rem;
     background-color: var(--third-color);
     padding: 1rem 0;
-
 }
 
 .aboutme_title,
@@ -215,8 +210,6 @@ a {
     background-color: inherit;
     padding: 1rem;
 }
-
-
 
 .aboutme_text {
     margin-left: 0.8rem;
@@ -230,6 +223,8 @@ a {
 .dots_image {
     width: 1.5rem;
 }
+
+/* occupation section */
 
 .occupation_section {
     display: flex;
@@ -269,6 +264,8 @@ a {
     transition: 0.5s;
 }
 
+/* hobby section */
+
 .hobby_section {
     background-color: var(--third-color);
     display: flex;
@@ -289,9 +286,7 @@ a {
     flex-direction: column;
     gap: 2rem;
     padding: 3rem 0 3rem 3rem;
-
 }
-
 
 .hobby_title {
 
@@ -309,6 +304,8 @@ a {
     background-color: inherit;
 }
 
+/* future section */
+
 .future_section {
     display: flex;
     flex-direction: column;
@@ -323,7 +320,6 @@ a {
 
 .future_text {
     margin-inline: 3rem;
-
 }
 
 .phrase {
@@ -352,6 +348,8 @@ a {
 .line_break {
     width: 94%;
 }
+
+/* contact section */
 
 .contact_section {
     display: flex;
@@ -396,7 +394,7 @@ a {
     margin-left: 2px;
 }
 
-/* footer */
+/* footer section */
 
 .footer_section {
     display: flex;
@@ -429,13 +427,12 @@ a {
 
 .mention_link {
     background-color: var(--third-color);
-        text-decoration: underline;
+    text-decoration: underline;
 }
 
 .mention_ghc {
     width: 4rem;
     background-color: inherit;
-
 }
 
 .created_by {
@@ -443,12 +440,15 @@ a {
     text-align: center;
 }
 
+
 /* tablet media */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .titles {
         font-size: 2.5rem;
     }
+
+    /*  share section */
 
     .share_section {
         align-items: center;
@@ -466,16 +466,21 @@ a {
 
     .me_photo-left {
         width: 30%;
-
     }
+
+    /* aboutme section */
 
     .aboutme {
         gap: 0;
     }
 
+    /* future section */
+
     .phrase_text {
         font-size: 1.5rem;
     }
+
+    /* mention section */
 
     .mention {
         flex-direction: column-reverse;
@@ -490,19 +495,21 @@ a {
     .mention_item {
         text-align: center;
     }
-    
-
 }
 
-@media screen and (min-width: 386px) and (max-width: 767px) {
-    
+/* cellphone media */
+
+@media screen and (min-width: 386px) and (max-width: 768px) {
+
     .titles {
         font-size: 2.5rem;
-    }   
-    
+    }
+
     .text {
         font-size: 1.3rem;
     }
+
+    /* header section */
 
     .header {
         padding: 2rem 1.5rem;
@@ -555,12 +562,11 @@ a {
         padding: 1rem 0;
         cursor: pointer;
         display: flex;
-
     }
 
     .hamburger {
         border-top: 0.3rem solid;
-        width: 3rem; 
+        width: 3rem;
         height: 0.125rem;
     }
 
@@ -593,7 +599,7 @@ a {
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
         top: -0.6rem;
-    } 
+    }
 
     /* main */
 
@@ -624,6 +630,7 @@ a {
 
     .me_photo-left {
         max-width: 44vw;
+        min-height: 15rem;
     }
 
     /* aboutme section */
@@ -639,7 +646,7 @@ a {
         text-align: center;
     }
 
-    .aboutme_text {
+    .aboutme_text, .hobby_text {
         margin-left: 0;
     }
 
@@ -668,7 +675,6 @@ a {
     }
 
     .hobby_text {
-        margin-left: 0;
         margin-inline: 2rem;
     }
 
@@ -685,15 +691,15 @@ a {
         align-items: center;
     }
 
+    /* contact section */
 
     .contact_section {
         padding: 0 3rem;
-    
     }
 
-    .contact_text, .contact_title {
+    .contact_text,
+    .contact_title {
         margin-inline: 0;
-    
     }
 
     .contact_item {
@@ -717,16 +723,18 @@ a {
     }
 }
 
-/* cellphone media */
+/* cellphone small media */
 
 @media screen and (max-width: 386px) {
     .titles {
         font-size: 2.5rem;
     }
-    
+
     .text {
         font-size: 1.3rem;
     }
+
+    /* header section */
 
     .header {
         padding: 2rem 1.5rem;
@@ -760,7 +768,7 @@ a {
 
 
     .nav_logo {
-        width: 5rem;
+        width: 4rem;
         margin-top: 27px;
     }
 
@@ -779,12 +787,11 @@ a {
         padding: 1rem 0;
         cursor: pointer;
         display: flex;
-
     }
 
     .hamburger {
         border-top: 0.3rem solid;
-        width: 2.8rem; 
+        width: 2.8rem;
         height: 0.125rem;
     }
 
@@ -817,7 +824,7 @@ a {
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
         top: -0.6rem;
-    } 
+    }
 
     /* main */
 
@@ -844,6 +851,7 @@ a {
     .thank_text {
         margin-top: 1rem;
         text-align: center;
+        font-size: 1.4rem;
     }
 
     .me_photo-left {
@@ -917,12 +925,13 @@ a {
 
     .contact_section {
         padding: 0 3rem;
-    
+
     }
 
-    .contact_text, .contact_title {
+    .contact_text,
+    .contact_title {
         margin-inline: 0;
-    
+
     }
 
     .contact_item {
@@ -945,7 +954,10 @@ a {
 
     .mention_item {
         text-align: center;
-
     }
-    
+
+    .mention_text {
+        line-height: 20px;
+    }
+
 }
