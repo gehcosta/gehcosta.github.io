@@ -1,2 +1,2 @@
 # gehcosta.github.io
-My website created by me.
+Website created by Geovanne Costa.
