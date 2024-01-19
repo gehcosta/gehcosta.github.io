@@ -41,6 +41,7 @@ a {
 
 .btn-menu {
     display: none;
+    animation: slideLeft 2s ease forwards;
 }
 
 .header {
@@ -71,6 +72,7 @@ a {
     font-size: 1.25rem;
     margin: 1rem;
     padding: 0.188rem;
+    animation: slideTop 1s ease forwards;
 }
 
 .nav_link:hover {
@@ -81,6 +83,8 @@ a {
 .nav_logo {
     width: 4rem;
     margin-top: 15px;
+    opacity: 0;
+    animation: slideDown 1.5s ease forwards;
 }
 
 /* .nav_logo:hover {
@@ -91,7 +95,7 @@ a {
 /* Main */
 .share_section {
     display: flex;
-    gap: 9rem;
+    gap: 4rem;
     justify-content: space-around;
     margin: 3rem 3.5rem;
 }
@@ -110,6 +114,18 @@ a {
     font-weight: 200;
 }
 
+.thank_subtitle {
+    animation: slideRight 1s ease forwards;
+    opacity: 0;
+    animation-delay: .7s;
+}
+
+.thank_text {
+    animation: slideRight 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
 .thank_text {
     margin-top: 2rem;
 }
@@ -119,6 +135,8 @@ a {
     font-family: var(--second-font);
     display: flex;
     gap: 1rem;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
 }
 
 
@@ -126,6 +144,8 @@ a {
     font-family: var(--second-font);
     font-size: 4rem;
     font-weight: 400;
+    opacity: 0;
+    animation: slideDown 1s ease forwards;
 }
 
 /* Share Buttons */
@@ -141,7 +161,7 @@ a {
     font-size: 1rem;
     font-weight: 300;
     gap: 0.5rem;
-    padding: 0.5rem 2rem;
+    padding: 0.7rem 2rem;
     transition: 0.5s;
 }
 
@@ -156,7 +176,7 @@ a {
 }
 
 .linkedin_btn {
-    width: 2.5rem;
+    width: 2.9rem;
 }
 
 .linkedin_btn:hover {
@@ -165,8 +185,8 @@ a {
 }
 
 .me_photo-left {
-    max-width: 30vw;
-    max-height: 65vh
+    max-width: 35vw;
+    max-height: 68vh;
 }
 
 .know_more {
@@ -183,7 +203,7 @@ a {
 
 .aboutme_section {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     background-color: var(--third-color);
     padding: 1rem 2rem 0 2rem;
     margin-top: 5rem;
@@ -191,9 +211,13 @@ a {
 
 .me_photo-front {
     width: 15vw;
-    min-width: 13rem;
+    min-width: 15rem;
     height: auto;
+    max-height: 100%;
+    object-fit: cover;
     background-color: var(--third-color);
+    opacity: 0;
+    animation: zoomIn 1.5s ease forwards;
 }
 
 .aboutme {
@@ -218,10 +242,7 @@ a {
 .arrow {
     margin-top: 3rem;
     text-align: center;
-}
-
-.dots_image {
-    width: 1.5rem;
+    animation: toggle 1.5s ease infinite;
 }
 
 /* occupation section */
@@ -244,7 +265,12 @@ a {
 .thrive {
     text-align: center;
     margin-inline: 2rem;
+}
 
+.ifood {
+    color: red;
+    transform: skew(-8deg);
+    display: inline-block;
 }
 
 .thrive {
@@ -386,7 +412,7 @@ a {
 }
 
 .contact_icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     transition: 0.5s;
 }
 
@@ -465,7 +491,7 @@ a {
     }
 
     .me_photo-left {
-        width: 30%;
+        width: 45%;
     }
 
     /* aboutme section */
@@ -549,6 +575,7 @@ a {
 
     .nav_link {
         font-size: 1.5rem;
+        opacity: 0;
     }
 
     .btn-menu {
@@ -562,6 +589,7 @@ a {
         padding: 1rem 0;
         cursor: pointer;
         display: flex;
+
     }
 
     .hamburger {
@@ -607,7 +635,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 2remrem;
     }
 
     .thank {
@@ -629,8 +657,8 @@ a {
     }
 
     .me_photo-left {
-        max-width: 44vw;
-        min-height: 15rem;
+        max-width: 70vw;
+        min-height: auto;
     }
 
     /* aboutme section */
@@ -646,7 +674,8 @@ a {
         text-align: center;
     }
 
-    .aboutme_text, .hobby_text {
+    .aboutme_text,
+    .hobby_text {
         margin-left: 0;
     }
 
@@ -832,7 +861,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .thank {
@@ -855,7 +884,7 @@ a {
     }
 
     .me_photo-left {
-        max-width: 44vw;
+        max-width: 75vw;
     }
 
     /* aboutme section */
@@ -960,4 +989,83 @@ a {
         line-height: 20px;
     }
 
+}
+
+/* Keyframes */
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes toggle {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
