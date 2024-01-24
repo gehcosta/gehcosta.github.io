@@ -161,7 +161,7 @@ a {
     font-size: 1rem;
     font-weight: 300;
     gap: 0.5rem;
-    padding: 0.7rem 2rem;
+    padding: 0.6rem 1rem;
     transition: 0.5s;
 }
 
@@ -177,7 +177,7 @@ a {
 
 .linkedin_btn {
     width: 2.9rem;
-    margin-top: 0.2rem;
+    margin-top: 5px;
 }
 
 .linkedin_btn:hover {
